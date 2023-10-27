@@ -14,7 +14,7 @@
             <div class="header">
                 <div class="city_option">
                     <select name="city" id="city">
-                        <option value="gyeongju">경주</option>
+                        <option value="gyeongju" selected>경주</option>
                         <option value="yongin">용인</option>
                         <option value="ulsan">울산</option>
                     </select>
@@ -70,7 +70,17 @@
         </ul>
 
         <div class="contents_Box">
-        </div>     
+            <div class="tourist_box">
+                <div class="select_box">
+                    <input type="radio" id="select" name="tourist" value="history_r"><label for="select">문화 / 유적</label>
+                    <input type="radio" id="select2" name="tourist" value='nature_r'> <label for="select2">자연</label>
+                    <input type="radio" id="select3" name="tourist" value='experience_r'> <label for="select3">체험</label>
+                    <div class="culture">문화 유적</div>
+                    <div class="nature">자연</div>
+                    <div class="experience">체험</div>
+                </div>
+            </div>
+        </div>       
     </div>
 </body>
 </html>

@@ -165,3 +165,55 @@
     width: 600px;
 
 }
+select{
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0); */
+    color: #000;
+    border: none;
+    font-weight : 100;
+    font-family: 'SEBANG_Gothic_Bold';
+    /* text-indent: 30px; */
+}
+select option{
+    font-family: 'SEBANG_Gothic_Bold';
+}
+
+/* 라디오 버튼 꾸미기 */
+.select_box {
+    padding: 15px 10px;
+    display: none;
+}
+.select_box input[type=radio]{
+    display: none;
+}
+.select_box input[type=radio]+label{
+    display: inline-block;
+    cursor: pointer;
+    height: 24px;
+    width: 90px;
+    /* border: 1px solid #333; */
+    line-height: 24px;
+    text-align: center;
+    font-weight:bold;
+    font-size:13px;
+}
+.select_box input[type=radio]+label{
+    background-color: #fff;
+    color: #333;
+}
+.select_box input[type=radio]:checked+label{
+    background-color: #333;
+    color: #fff;
+}
+.select_box .culture{
+    display: none;
+}
+.select_box .nature{
+    display: none;
+}
+.select_box .experience{
+    display: none;
+}
