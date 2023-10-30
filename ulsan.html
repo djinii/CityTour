@@ -12,18 +12,20 @@
     <div class="wrap">
         <div class="start_bg">
             <div class="header">
-                <div class="city_option">
-                    <select name="city" id="city">
-                        <option value="gyeongju">경주</option>
-                        <option value="yongin">용인</option>
-                        <option value="ulsan" selected>울산</option>
-                    </select>
-                </div>
-                <div class="search">
-                    <form>
-                      <input type="search" placeholder="search">
-                      <span>검색</span>
-                     </form>
+                <div class="header2">
+                    <div class="city_option">
+                        <select name="city" id="city">
+                            <option value="gyeongju">경주</option>
+                            <option value="yongin">용인</option>
+                            <option value="ulsan">울산</option>
+                        </select>
+                    </div>
+                    <div class="search">
+                        <form>
+                        <input type="search" placeholder="search">
+                        <span>검색</span>
+                        </form>
+                    </div>
                 </div>
                 <ul class="nav">
                     <li><a href="#">HOME</a></li>
@@ -60,41 +62,93 @@
                 <p></p>
                 <div class="result" id="menu">숙소</div>
             </li> 
-           <li id="menu4"> 
+            <li id="menu4"> 
                 <div class="icon">
-                    <i class="fa-solid fa-person-running" style="color: #7a6ea3;"></i>
+                    <i class="fa-solid fa-camera-retro" style="color: #7a6ea3;"></i>
                 </div>
-                <p></p>
-                <div class="result">체험</div>
+                <!-- <p></p> -->
+                <div class="result">축제</div>
             </li> 
         </ul>
 
         <div class="contents_Box">
-            <div class="food">
-                <ul class="food_list">
-                    <li>맛집1</li>
-                    <li>맛집2</li>
-                    <li>맛집1</li>
-                    <li>맛집2</li>
-                    <li>맛집3</li>
-                    <li>맛집4</li>
-                </ul>
-                <div class="pop_up">
-                    <div class="img">
-                        <!-- 가게 외부, 음식, 메뉴판 -->
-                    </div>
-                    <div class="about">
-                        <!-- 주소, 전화번호, 운영시간 -->
+            <div class="back_food">
+                <div class="food">
+                    <p class="food_title">
+                        구석구석 먹거리 탐방
+                    </p>
+                    <ul class="food_list">
+                        <li style="background-image: url(./img/u_food3.jpeg);">
+                            <div class="box">
+                                <div class="txtBox">
+                                    <p style="font-size: 35px;">울산 중구</p>
+                                    <p >#꼼장어</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="background-image: url(./img/u_food2.jpeg);">
+                            <div class="box">
+                                <div class="txtBox">
+                                    <p style="font-size: 35px;">울산 동구</p>
+                                    <p>#회</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="background-image: url(./img/u_food5.jpeg);">
+                            <div class="box">
+                                <div class="txtBox">
+                                    <p style="font-size: 35px;">울산 북구</p>
+                                    <p >#한정식</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="background-image: url(./img/u_food8.jpeg);">
+                            <div class="box">
+                                <div class="txtBox">
+                                    <p style="font-size: 35px;">울산 울주군</p>
+                                    <p>#언양 불고기</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="background-image: url(./img/u_food12.jpeg);">
+                            <div class="box">
+                                <div class="txtBox">
+                                    <p style="font-size: 35px;">울산 남구</p>
+                                    <p>#고래 고기</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="background-image: url(./img/u_food10.jpeg);">
+                            <div class="box">
+                                <div class="txtBox">
+                                    <p style="font-size: 35px;">울산 북구</p>
+                                    <p >#물회</p>
+                                </div>
+                            </div>
+                        </li>
+    
+    
+                    </ul>
+                    <div class="pop_up">
+                        <div class="img">
+                            
+                            
+                            <img src="./img/food8.jpeg" alt="">
+                            <!-- 가게 외부, 음식, 메뉴판 -->
+                        </div>
+                        <div class="about">
+                            <!-- 주소, 전화번호, 운영시간 -->
+                        </div>
                     </div>
                 </div>
             </div>
+            
             <div class="tourist_box">
                 <div class="select_box">
                     <input type="radio" id="select" name="tourist" value="history_r"><label for="select">문화 / 유적</label>
                     <input type="radio" id="select2" name="tourist" value='nature_r'> <label for="select2">자연</label>
                     <input type="radio" id="select3" name="tourist" value='experience_r'> <label for="select3">체험</label>
-                    <div class="culture">
-                        
+                    <div class="culture">p
                     </div>
                     <div class="nature">자연</div>
                     <div class="experience">체험</div>

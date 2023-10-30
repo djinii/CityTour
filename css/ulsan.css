@@ -51,10 +51,37 @@
 }
 
 .header {
-    display: flex;
+    /* display: flex;
     margin: auto;
     width: 1280px;
+    height: 86px; */
+    position: relative;
+    top: 0; left: 0;
+    display: flex;
+    margin: auto;
+    width: 100%;
     height: 86px;
+}
+.header2{
+    display: flex;
+    margin-left: 100px;
+}
+
+.city_option{
+
+    margin-top: 24px;
+    line-height: 40px;
+
+}
+.city_option #city{
+    font-size: 1rem;
+    width: 110px;
+    height: 40px;
+    /* background: black; */
+    background: rgb(0,0,0,0.5);
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 5px;
     
 }
 .search {
@@ -62,7 +89,8 @@
     height: 40px;
     background: rgb(0,0,0,0.5);
     border-radius: 5px;
-    margin-top: 24px;
+    /* margin-top: 24px; */
+    margin: 24px 30px 0px 0px;
 }
 .search > form > input {
     border: none;
@@ -80,25 +108,28 @@
 }
 
 .nav {
+    position: absolute;
+    top:0;  left: 700px;
     display: flex;
     justify-content: flex-end;
     line-height: 86px;
     width: calc(1280px - 300px);
 }
 .nav> li {
-    margin-left: 84px;
+    margin-right: 74px;
 }
 .nav> li > a {
     color: #fff;
+    
 }
 .amount {
+    /* background-color: red; */
     position: relative;
     top: -80px;
     width: 1280px;
     display: flex;
     margin: auto;
-    height: 500px;
-    
+    height: 250px;  
 }
 .amount li {
     flex: 1;
@@ -137,10 +168,14 @@
 .amount >li > p {
     height: 69px;
     border-right: 1px solid gray;
-    margin-top: -85px;
-    
+    margin-top: -85px;    
 }
+.amount li  p:last-child{
+    width: 10px;
+    height: 10px;
+    border-right-color:rgba(85, 68, 51, 0)
 
+}
 
 .amount >li >div{
     margin-top: 10px;
@@ -244,49 +279,97 @@ select option{
 
 .contents_Box{
     width: 100%;
-    /* height: 400px; */
+    /* height: 800px; */
     /* border: 1px solid blue; */
     /* background-color: red; */
-    display: flex;
+    /* display: flex; */
     justify-content: center;
-    /* margin-top: -100px; */
+    margin-top: -220px;
 }
-.food{
-    /* width: 80%; */
+.back_food{
+
+    width: 100%;
     align-items: center;
-    /* height: 150px; */
-    border: 1px solid black;
+    height: 959px;
+    background-color: #f1f2f3;
+    /* height: 1000px; */
+}
+
+.food{
+    padding-top: 70px;
+    width: 85%;
+    align-items: center;
+    /* height: 1000px; */
+    /* line-height: 500px; */
+    /* border: 1px solid black; */
     /* background-color: blue; */
+    margin: 200px auto;
+}
+
+.food .food_title{
+    height: 120px;
+    line-height: 120px;
+    font-size: 50px;
+    font-family: 'GmarketSansMedium' ;
+    /* margin: 10px 0px auto 50px; */
+    /* border: 1px solid black; */
+    margin-bottom: 40px;
+    margin-top: 10px;
+    text-align: center;
 }
 .food .food_list{
+    /* width: 90%; */
+    justify-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 18px;
+    grid-gap: 25px;
 }
 
 .food .food_list li{
-    width: 320px;
-    height: 220px;
-    margin-right: 0px;
-    background-color: gray;
+    width: 410px;
+    height: 270px;
+    margin-top: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
 }
+.food .food_list li .box{
+    position: absolute;
+    width: 410px;
+    height: 270px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.646);
+    /* 호버하면 위로 올라오면서 더보기 창 연결  */
+}
+.food .food_list li .box .txtBox{
+    margin-top: 92px;
+    text-align: center;
+    
+}
+.food .food_list li .box p{
+    font-family: 'GmarketSansMedium' ;
+    color: white;
+    font-size: 43px;
 
+}
 .food .pop_up{
     display: flex;
     justify-content: space-evenly;
     position: absolute;
-    top: 1040px; left: 250px;
-    width: 750px;
-    height: 420px;
+    top: 1250px; left: 250px;
+    width: 1120px;
+    height: 500px;
+    border-radius: 15px;
     background-color:white;
     display: none;
 }
 .food .pop_up .img{
-    width: 350px;
+    width: 550px;
     background-color: yellow;
 }
 .food .pop_up .about{
-    width: 350px;
+    width: 530px;
     background-color: blue;
 }
