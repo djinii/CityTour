@@ -13,7 +13,7 @@
     border-collapse: collapse;
 }
 .wrap{
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 
 .intro_text h1{
@@ -38,7 +38,7 @@
 }
 /* -- */
 .start_bg {
-    background-image: url(../img/mainbg.jpg);
+    background-image: url(../img/ymainbg2.jpg);
     width: 100%; 
     height: 718px;
     opacity: 75%;
@@ -166,6 +166,7 @@
     height: 57px;
 }
 
+
 .intro_text {
    width: 100%;
    margin: 231px auto 231px auto;
@@ -209,54 +210,18 @@ select option{
     font-family: 'SEBANG_Gothic_Bold';
 }
 
-/* 라디오 버튼 꾸미기 */
-.select_box {
-    padding: 15px 10px;
-    display: none;
-}
-.select_box input[type=radio]{
-    display: none;
-}
-.select_box input[type=radio]+label{
-    display: inline-block;
-    cursor: pointer;
-    height: 24px;
-    width: 90px;
-    /* border: 1px solid #333; */
-    line-height: 24px;
-    text-align: center;
-    font-weight:bold;
-    font-size:13px;
-}
-.select_box input[type=radio]+label{
-    background-color: #fff;
-    color: #333;
-}
-.select_box input[type=radio]:checked+label{
-    background-color: #333;
-    color: #fff;
-}
-.select_box .culture{
-    display: none;
-}
-.select_box .nature{
-    display: none;
-}
-.select_box .experience{
-    display: none;
-}
 /* .main_text0 */
 .main {
 width: 100%;
 height: 210px;
-margin-top: -490px;
+margin-top: -500px;
 background:#f1f2f3;
 }
 .main_text0{
     width: 100%;
-    height: 701px;
+    height: 945px;
     background: #fff;
-    border:  1px solid black;
+    border:  0px solid black;
 }
 .main_text0> h1 {
     margin-top: 100px;
@@ -292,8 +257,6 @@ background:#f1f2f3;
 .food .contents2 {
     width: 280px;
     margin: 10px auto;
-
-
 }
 .more {
     width: 180px;
@@ -311,11 +274,20 @@ background:#f1f2f3;
     background: white;
     color: #000;
 }
+.more_box {
+    width: 1280px;
+    height: 500px;
+    background: white;
+    border: 1px solid black;
+    position: absolute;
+    top: 1100px; left: 305px;
+    display: none;
+}
 /* .main_text1 */
 .main_text1{
     width: 100%;
-    height: 900px;
-    background: gray;
+    height: 930px;
+    background: #f1f2f3;
 }
 .main_text1 > h1{
     padding-top: 50px;
@@ -324,3 +296,75 @@ background:#f1f2f3;
 .main_text1 .contents1 {
     text-align: center ;
 }
+/* 라디오 버튼 꾸미기 */
+.select_box {
+    padding: 8px 10px;
+    /* display: none; */
+    text-align: center;
+    /* margin-top: 10px; */
+    /* border: 1px solid red; */
+}
+.select_box input[type=radio]{
+    display: none;
+    height: 80px;
+}
+.select_box input[type=radio]+label{
+    display: inline-block;
+    cursor: pointer;
+    height: 40px;
+    /* width: 90px; */
+    /* border: 1px solid #333; */
+    line-height: 40px;
+    text-align: center;
+    font-weight:bold;
+    font-size:24px;
+    background-color: #ffffff00;
+    /* color: rgb(135, 51, 125); */
+    color: black;
+    margin: 0px 12px;
+}
+/* .select_box input[type=radio]+label{
+} */
+.select_box input[type=radio]:checked+label{
+    /* background-color: #333; */
+    color: #7a6ea3;
+}
+.select_box .culture{
+    /* display: none; */
+}
+.select_box .nature{
+    /* display: none; */
+}
+.select_box .experience{
+    /* display: none; */
+}
+
+/* 라디오 버튼 밑에 만들기 */
+.service {
+    width:1280px;
+    display: flex;
+    margin: 49px auto;
+    height: 507px;
+    border: 1px solid black;
+    display: none;
+  }
+  .service > .culture_photo{
+    width: 100%;
+    height: 507px;
+    border: 1px solid red;
+}
+  .service img{
+    width: 100%;
+    height: 100%;
+  }
+  .service > .contents2 {
+    /* margin-top: 420px; */
+    padding: 20px;
+    font-size: 1.5rem;
+    border: 1px solid green;
+  }
+  .service > .contents2 > h2{
+    margin-bottom: 27px;
+  }
+  
+  

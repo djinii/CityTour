@@ -9,9 +9,10 @@ window.onload = function(){
     let menu2 = document.getElementById('menu2')
     let menu3 = document.getElementById('menu3')
     let menu4 = document.getElementById('menu4')
+    let main = document.querySelector('.main')
 
 
-    let tourlist_box = document.querySelector('.tourist_box');
+    let tourlist_box = document.querySelector('.tourlist_box');
     let select_tour = document.querySelector('.select_box');
     let culture = document.querySelector('.culture');
     let nature = document.querySelector('.nature');
@@ -22,9 +23,10 @@ window.onload = function(){
     let select2 = document.getElementById('sel2');
     let select3 = document.getElementById('sel3');
 
-    menu1.addEventListener('click',function(){
-        select_tour.style.display = 'none'
-    })
+    // menu1.addEventListener('click',function(){
+    //     main.style.display = 'none'
+
+    // })
     
     menu2.addEventListener('click', function(){
         select_tour.style.display = 'block'
