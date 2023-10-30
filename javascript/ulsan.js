@@ -11,25 +11,24 @@ window.onload = function(){
     let menu4 = document.getElementById('menu4')
 
 
-    let tourlist_box = document.querySelector('.tourist_box');
+    let tourlist_box = document.querySelector('.tourlist_box');
     let select_tour = document.querySelector('.select_box');
     let culture = document.querySelector('.culture');
     let nature = document.querySelector('.nature');
     let experience = document.querySelector('.experience');
 
     menu1.addEventListener('click',function(){
-        select_tour.style.display = 'none'
+        // select_tour.style.display = 'none'
     })
 
     menu2.addEventListener('click', function(){
-        console.log(select_tour)
-        select_tour.style.display = 'block'
+        select_tour.style.display =  'block'
     })
     menu3.addEventListener('click',function(){
-        select_tour.style.display = 'none'
+        // select_tour.style.display = 'none'
     })
     menu4.addEventListener('click',function(){
-        select_tour.style.display = 'none'
+        // select_tour.style.display = 'none'
     })
     let radios = document.querySelectorAll('input[type="radio"][name="tourist"]');
 
