@@ -310,25 +310,23 @@ select option{
     width: 380px;
     height: 380px;
     /* border: 1px solid red; */
-    border-radius: 300px;
+    border-radius: 250px;
     margin: 150px 40px;
     background-color: white;
+    /* z-index: 1; */
 
-
+    
 }
-.cul_bg_box{
-
-}
-.cul_bg_box #bg_item{
+/* .cul_place_box #bg_item{
     position: absolute;
-    top:2350px;
-    width: 380px;
-    height: 380px;
-    /* border: 1px solid red; */
+    top:2130px; left: 190px;
+    width: 385px;
+    height: 385px;
     border-radius: 300px;
     margin: 150px 40px;
     background-color: #7a6ea3;
-}
+} */
+
 
 
 .contents_Box{
